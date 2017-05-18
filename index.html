@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="vremenskaPrognoza">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Временска Прогноза</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.angularjs.org/1.3.0-rc.2/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.3.0-rc.2/angular-resource.min.js">
+    </script>
+    <script src="https://code.angularjs.org/1.3.0-rc.2/angular-route.min.js"></script>
+    <script type="text/javascript" src="src/app.js"></script>
+    <script type="text/javascript" src="src/mrezni-ruti.js"></script>
+    <script type="text/javascript" src="src/servisi.js"></script>
+    <script type="text/javascript" src="src/kontroleri.js"></script>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="/">Временска Прогноза</a>
+				</div>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><i class="fa fa-home"></i>Почетна</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<div class="container sodrzina">
+		<div ng-view></div>
+	</div>
+</body>
+</html>

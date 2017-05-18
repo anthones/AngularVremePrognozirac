@@ -1,0 +1,31 @@
+html, body, input, select, textarea {
+	font-size: 1.05em !important;
+}
+
+body {
+	background: #4B79A1;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(left, #283E51, #4B79A1);
+	background: -o-linear-gradient(left, #283E51, #4B79A1);
+	background: linear-gradient(to right, #283E51, #4B79A1);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}	
+
+h2, h4, a, span {
+	color: white;
+}
+
+a:hover {
+	color: #999;
+	text-decoration: underline;
+}
+
+p, h3 {color: #666;}
+
+h2 {text-transform: capitalize;}
+
+h4 {margin-bottom: 20px;}
+
+.sodrzina {
+	margin-top: 100px;
+	text-align: center;
+	width: 700px;
+}

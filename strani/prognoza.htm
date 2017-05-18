@@ -1,0 +1,21 @@
+<p><a href="#/">Назад на почетна</a></p>
+<h2>Временска прогноза за {{grad}}</h2>
+<hr />
+Денови: <a href="#/prognoza/2" ng-class="{'bg-primary': denovi === '2'}">2</a> | 
+		<a href="#/prognoza/5" ng-class="{'bg-primary': denovi === '5'}">5</a> | 
+		<a href="#/prognoza/7" ng-class="{'bg-primary': denovi === '7'}">7</a>
+<hr />
+<div ng-repeat="p in prognozaIshod.list">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title prozorci">{{ pretvoriDatum(p.dt) | date: 'MMM d, y' }}</h3>
+				</div>
+				<div class="panel-body">
+					<p>Дневна температура: {{pretvoriCelzius(p.temp.day)}}&deg;C</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
